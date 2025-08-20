@@ -77,5 +77,9 @@ in power bi the connection is created and you can start to create the report.
 
 ![alt text](image-15.png)
 
+
+video reference to create the connection between mysql and power bi
+https://www.youtube.com/watch?v=5KkAh6NKr7s
+
 Author: Cristiam Loaiza
 Date: 08/20/2025
