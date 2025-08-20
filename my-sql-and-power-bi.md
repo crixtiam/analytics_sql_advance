@@ -73,7 +73,9 @@ in power bi the connection is created and you can start to create the report.
 
 ![alt text](image-14.png)
 
+### 7. Create the report in power bi
 
+![alt text](image-15.png)
 
 Author: Cristiam Loaiza
 Date: 08/20/2025
