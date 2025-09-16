@@ -1,0 +1,1 @@
+CREATE DATABASE IF NOT EXITS  banco_datadb;
