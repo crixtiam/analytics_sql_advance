@@ -1,0 +1,64 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.7 Chrome/138.0.7204.251 Electron/37.7.1 Safari/537.36" version="28.2.7">
+  <diagram id="diagram-1" name="Page-1">
+    <mxGraphModel dx="925" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="customers" value="&lt;b&gt;customers&lt;/b&gt;&lt;br/&gt;* customer_id&lt;br/&gt;first_name&lt;br/&gt;last_name&lt;br/&gt;phone&lt;br/&gt;email&lt;br/&gt;street&lt;br/&gt;city&lt;br/&gt;state&lt;br/&gt;zip_code" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1f77d0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="50" y="10" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="orders" value="&lt;b&gt;orders&lt;/b&gt;&lt;br/&gt;* order_id&lt;br/&gt;customer_id&lt;br/&gt;order_status&lt;br/&gt;order_date&lt;br/&gt;required_date&lt;br/&gt;shipped_date&lt;br/&gt;store_id&lt;br/&gt;staff_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1f77d0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="40" y="210" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="order_items" value="&lt;b&gt;order_items&lt;/b&gt;&lt;br/&gt;* order_id&lt;br/&gt;* item_id&lt;br/&gt;product_id&lt;br/&gt;quantity&lt;br/&gt;list_price&lt;br/&gt;discount" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1f77d0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="20" y="450" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="staffs" value="&lt;b&gt;staffs&lt;/b&gt;&lt;br/&gt;* staff_id&lt;br/&gt;first_name&lt;br/&gt;last_name&lt;br/&gt;email&lt;br/&gt;phone&lt;br/&gt;active&lt;br/&gt;store_id&lt;br/&gt;manager_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1f77d0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="320" y="40" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="stores" value="&lt;b&gt;stores&lt;/b&gt;&lt;br/&gt;* store_id&lt;br/&gt;store_name&lt;br/&gt;phone&lt;br/&gt;email&lt;br/&gt;street&lt;br/&gt;city&lt;br/&gt;state&lt;br/&gt;zip_code" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1f77d0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="320" y="260" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="categories" value="&lt;b&gt;categories&lt;/b&gt;&lt;br/&gt;* category_id&lt;br/&gt;category_name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffd8d8;strokeColor=#d9534f;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="640" y="40" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="products" value="&lt;b&gt;products&lt;/b&gt;&lt;br/&gt;* product_id&lt;br/&gt;product_name&lt;br/&gt;brand_id&lt;br/&gt;category_id&lt;br/&gt;model_year&lt;br/&gt;list_price" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffd8d8;strokeColor=#d9534f;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="640" y="140" width="220" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="stocks" value="&lt;b&gt;stocks&lt;/b&gt;&lt;br/&gt;* store_id&lt;br/&gt;* product_id&lt;br/&gt;quantity" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffd8d8;strokeColor=#d9534f;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="640" y="340" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="brands" value="&lt;b&gt;brands&lt;/b&gt;&lt;br/&gt;* brand_id&lt;br/&gt;brand_name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffd8d8;strokeColor=#d9534f;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="640" y="460" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cust_to_orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#444444;endArrow=none;startArrow=none;" parent="1" source="customers" target="orders" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="orders_to_orderitems" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#444444;" parent="1" source="orders" target="order_items" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="orders_to_stores" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#444444;" parent="1" source="orders" target="stores" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="staffs_to_stores" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#444444;" parent="1" source="staffs" target="stores" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="orderitems_to_products" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#444444;" parent="1" source="order_items" target="products" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stores_to_stocks" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#444444;" parent="1" source="stores" target="stocks" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="products_to_stocks" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#444444;" parent="1" source="products" target="stocks" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="products_to_categories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#444444;" parent="1" source="products" target="categories" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="products_to_brands" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#444444;" parent="1" source="products" target="brands" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
